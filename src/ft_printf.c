@@ -25,12 +25,10 @@ void    ft_printf(char *str, ...)
             write(1, &ch, 1);
         i++;
     }
-	printf("x = %d\n", x);
 	while (x > 0)
 	{
-		printf("f0\n");
+		printf("%d\n", x);
 		printf("%ld\n", va_arg(var_list, long));
-		printf("f1\n");
 		x--;
 	}
 }
