@@ -28,7 +28,7 @@ void    ft_printf(char *str, ...)
 	while (x > 0)
 	{
 		printf("%d\n", x);
-		printf("%s\n", va_arg(var_list, char*));
+		printf("%d\n", va_arg(var_list, int));
 		x--;
 	}
 }
